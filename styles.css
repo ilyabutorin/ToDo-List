@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Ubuntu", sans-serif;
+}
+
+.main {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 100px 50px 100px 50px;
+    background: linear-gradient(143deg, rgba(2,0,36,1) 0%, rgba(99,9,121,0.9164915966386554) 50%, rgba(0,212,255,1) 100%);
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+}
+
+.todoContainer {
+    background-color: rgba(255, 255, 255, 0.401);
+    width: 50%;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.todoContainer h2 {
+    font-size: 24px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    letter-spacing: 1px;
+}
+
+.todoContainer img {
+    height: 30px;
+    width: auto;
+    
+}
+
+.inputButton {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #edeef0;
+    border-radius: 40px;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.inputButton input {
+    border-radius: 40px;
+    border: none;
+    outline: none;
+    height: 40px;
+    background-color: transparent;
+}
+
+.inputButton button {
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background: #ff5945;
+    color: #edeef0;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 40px;
+}
+
+.todoContainer ul li {
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+
+.todoContainer ul li::before {
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url('./images/unchecked.png');
+    background-size: cover;
+    background-position: center;
+    top: 8px;
+    left: 8px;
+}
+
+#list-container .checked {
+    color: #555;
+    text-decoration: line-through;
+}
+
+#list-container .checked::before {
+    background-image: url('./images/checked.png');
+}
+
+.todoContainer ul li span {
+    position: absolute;
+    right: 0;
+    top: 10px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.todoContainer ul li span:hover {
+    background: #edeef077;
+    color: #ff5945;
+}
+
+.aboutInfo {
+    width: 50%;
+    padding: 50px;
+}
+
+.firstAbout h1,
+.firstAbout h2,
+.firstAbout p {
+    margin-bottom: 15px;
+}
+
+.firstAbout h1 {
+    font-size: 50px;
+    color: #ff5945;
+}
+
+.secondAbout h3 {
+    font-size: 20px;
+}
+
+.secondAbout ul {
+    padding-left: 20px;
+}
+
+.secondAbout li {
+    margin: 10px;
+}
+
+.secondAbout a {
+    text-decoration: underline;
+    color: black;
+}
